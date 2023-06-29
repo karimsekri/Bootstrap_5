@@ -10,25 +10,39 @@
     <title>Bootstrap 5 </title>
 </head>
 
-<body class="bg-light">
+<body class="container bg-light">
 
-    <nav class="navbar bg-secondary  ">
+    <nav class="navbar bg-secondary d-flex flex-row ">
+
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Mémento des propriétés CSS
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#police">Propriétés de formatage de texte</a></li>
-                <li><a class="dropdown-item" href="#boites">Propriétés des boîtes</a></li>
-                <li><a class="dropdown-item" href="#affichage">Propriétés de positionnement et d'affichage</a></li>
+                <li><a class="dropdown-item" href="#titre1">Propriétés de formatage de texte</a></li>
+                <li><a class="dropdown-item" href="#sous-titre2">Police, taille et décorations</a></li>
+                <li><a class="dropdown-item" href="#exemple">Exemple</a></li>
             </ul>
         </div>
+
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger " type="submit">Search</button>
+            <button class="btn btn-outline-danger " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></button>
         </form>
-
+        <div>
+            <a href="/pages/login.html" class="btn btn-primary" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+            </a>
+        </div>
 
     </nav>
 
@@ -36,8 +50,8 @@
     <!--Propriétés de formatage de texte-->
     <div class="container  ">
         <div class="card-header" id="police">
-            <p
-                class="h1 display-1 text-center text-uppercase  text-warning border border-5 rounded-pill m-5 w-100 h-100 p-3 ">
+            <p class="h1 display-1 text-center text-uppercase  text-warning border border-5 rounded-pill m-5 w-100 h-100 p-3 "
+                id="titre1">
                 Propriétés de formatage de texte</p>
             <p>Je résume ici la plupart des propriétés de formatage de texte.<br>
 
@@ -45,7 +59,8 @@
                 gras, italique, souligné, changer la police, l'alignement etc...</p>
         </div>
         <div class="card-body">
-            <h2 class=" display-6  text-warning fst-italic text-start"> Police, taille et décorations </h2>
+            <h2 class=" display-6  text-warning fst-italic text-start" id="sous-titre2"> Police, taille et décorations
+            </h2>
             <table class="table table-bordered border-black m-5 w-auto">
                 <thead>
                     <tr>
@@ -81,16 +96,19 @@
                     <tr></tr>
                 </tbody>
             </table>
-            <h2 class=" display-6  text-warning fst-italic text-start"> Exemple </h2>
+            <h2 class=" display-6  text-warning fst-italic text-start" id="exemple"> Exemple </h2>
             <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sHYJxPihWx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sHYJxPihWx4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
 
 
-   
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
